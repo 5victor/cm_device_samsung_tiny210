@@ -1,0 +1,7 @@
+#
+# system.prop for tiny210
+#
+
+ro.sf.auto_lcd_density=yes
+ro.sf.lcd_density=120
+

@@ -1,0 +1,11 @@
+on early-init
+    export EXTERNAL_STORAGE /mnt/sdcard
+    mkdir /mnt/sdcard 0000 system system
+    # for backwards compatibility
+    symlink /mnt/sdcard /sdcard
+
+service pvrsrvinit /system/vendor/bin/pvrsrvinit
+    class core
+    user root
+    group root
+    oneshot

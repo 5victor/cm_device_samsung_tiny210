@@ -1,0 +1,2 @@
+/dev/pvrsrvkm             0666   system     system
+/dev/pmem_gpu1            0660   system     graphics

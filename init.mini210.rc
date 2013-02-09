@@ -4,6 +4,9 @@ on early-init
     # for backwards compatibility
     symlink /mnt/sdcard /sdcard
 
+on post-fs
+    trigger post-fs-data
+
 service pvrsrvinit /system/vendor/bin/pvrsrvinit
     class core
     user root

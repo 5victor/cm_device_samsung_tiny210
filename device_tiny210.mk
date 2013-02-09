@@ -18,9 +18,8 @@ PRODUCT_NAME := full_tiny210
 PRODUCT_DEVICE := tiny210
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := Full CM on tiny210
-PRODUCT_RESTRICT_VENDOR_FILES := true
 
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
 	device/samsung/tiny210/init.mini210.rc:root/init.mini210.rc\
         device/samsung/tiny210/ueventd.mini210.rc:root/ueventd.mini210.rc \
         device/samsung/tiny210/vold.fstab:system/etc/vold.fstab \

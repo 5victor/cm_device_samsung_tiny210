@@ -26,9 +26,12 @@ PRODUCT_COPY_FILES += \
         device/samsung/tiny210/ft5x0x_ts.idc:system/usr/idc/ft5x0x_ts.idc
 
 PRODUCT_PACKAGES += \
+	sensors.mini210 \
         audio.primary.mini210 \
         tinyplay \
         tinycap \
         tinymix
+
+#TARGET_USERIMAGES_USE_EXT4 := true
 
 $(call inherit-product, device/samsung/tiny210/hwopengl.mk)
